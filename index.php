@@ -1,4 +1,6 @@
 <?php
+
+// class
 include_once __DIR__ . '/classes/User.php';
 include_once __DIR__ . '/classes/UserSigned.php';
 include_once __DIR__ . '/classes/CreditCard.php';
@@ -6,6 +8,8 @@ include_once __DIR__ . '/classes/Products.php';
 include_once __DIR__ . '/classes/Food.php';
 include_once __DIR__ . '/classes/Pesticides.php';
 include_once __DIR__ . '/classes/Kennels.php';
+include_once __DIR__ . '/classes/Cart.php';
+
 
 
 
@@ -42,7 +46,10 @@ $house_spike = new Kennels('Cuccia Spike Classic', 181.99, 'wood', '109cm', '97c
 
 $credits_mario = new CreditCard('Mario', 'Rossi', '2026-05');
 $mario = new User('Mario', 'Rossi', 'Mario88', 'mario@gmail.com', 'via indirizzo 43', $credits_mario);
-// var_dump($mario);
+$mario_product_for_cart = [$house_sun, $crocchette_forza10];
+$mario_cart = new Cart($mario_product_for_cart, 0);
+
+var_dump($mario_cart);
 
 
 $credits_giovanni = new CreditCard('Giovanni', 'Rossi', '2023-08');
