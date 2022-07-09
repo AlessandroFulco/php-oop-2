@@ -45,10 +45,10 @@ $house_spike = new Kennels('Cuccia Spike Classic', 181.99, 'wood', '109cm', '97c
 
 $carrello = [$house_sun, $house_dogVilla];
 $marioCart = new Cart($carrello);
-$credits_mario = new CreditCard('Mario', 'Rossi', '2026-05');
+$credits_mario = new CreditCard('Mario', 'Rossi', '2026-05-13');
 $mario = new User('Mario', 'Rossi', 'Mario88', 'mario@gmail.com', 'via indirizzo 43', $credits_mario, $marioCart);
 // var_dump($marioCart);
-var_dump($mario);
+// var_dump($mario);
 
 
 
@@ -57,9 +57,9 @@ var_dump($mario);
 
 $carrello = [$house_sun, $house_dogVilla];
 $giovanniCart = new Cart($carrello);
-$credits_giovanni = new CreditCard('Giovanni', 'Rossi', '2023-08');
+$credits_giovanni = new CreditCard('Giovanni', 'Rossi', '2021-08-22');
 $giovanni = new UserSigned('Giovanni', 'Rossi', 'giovanni12', 'giov@gmail.com', 'via indirizzo 23', $credits_giovanni, $giovanniCart);
 // var_dump($giovanniCart);
-var_dump($giovanni);
+// var_dump($giovanni);
 
 
